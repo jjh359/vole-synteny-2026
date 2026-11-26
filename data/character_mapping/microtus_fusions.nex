@@ -1,0 +1,457 @@
+#NEXUS
+[written Wed May 20 13:13:00 EDT 2026 by Mesquite  version 4.01 (build 1092) at Farron/192.168.56.1]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=7;
+	TAXLABELS
+		Microtus_arvalis Microtus_californicus Microtus_ochrogaster Microtus_pennsylvanicus Microtus_montanus Microtus_oregoni Microtus_longicaudus 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Character_Matrix;
+	DIMENSIONS  NCHAR=40;
+	FORMAT DATATYPE = STANDARD RESPECTCASE GAP = - MISSING = ? SYMBOLS = "  0 1";
+	CHARSTATELABELS 
+		1 1.2,
+		2 1.7,
+		3 '2*',
+		4 2a.5,
+		5 2a.15,
+		6 2b.10b,
+		7 2b.20,
+		8 2b.23,
+		9 3.4,
+		10 3.16,
+		11 3.18,
+		12 4.19,
+		13 5.6,
+		14 5.8,
+		15 6.26,
+		16 7.8,
+		17 7.19a,
+		18 9.10,
+		19 9.22,
+		20 '10* (Type 1)',
+		21 '10* (Type 2)',
+		22 10a.19,
+		23 '10b.16 (+ Inversion)',
+		24 10b.20,
+		25 10b.24,
+		26 11.18,
+		27 12.15,
+		28 13.14,
+		29 13.23,
+		30 14.27,
+		31 '15*',
+		32 16.20,
+		33 17.22,
+		34 17.24,
+		35 '19*',
+		36 20.21,
+		37 21.26,
+		38 23.27,
+		39 24.25,
+		40 '20*' ; 
+	MATRIX
+	Microtus_arvalis         1000000010001001010000000000000000000000
+	Microtus_californicus    0000000000000000010000000000000000000000
+	Microtus_ochrogaster     0000000000000000000100000000100000010000
+	Microtus_pennsylvanicus  0011000000010000100010000110000110101000
+	Microtus_montanus        0?1?01000??10?00000010001111000110001100
+	Microtus_oregoni         0110101101110110001011100111010111001010
+	Microtus_longicaudus     0010000000000000000010010110001100000001
+
+;
+
+END;
+BEGIN TREES[!'This  "temporary" tree block was written by Mesquite to hold the modified tree being edited in a tree window.'];
+	Title Temp1336.1753412085264.86871317305399421;
+	ID 019e46605c1e8;
+	LINK Taxa = Taxa;
+	TRANSLATE
+[0] 		1 Microtus_arvalis,
+[1] 		2 Microtus_californicus,
+[2] 		3 Microtus_ochrogaster,
+[3] 		4 Microtus_pennsylvanicus,
+[4] 		5 Microtus_montanus,
+[5] 		6 Microtus_oregoni,
+[6] 		7 Microtus_longicaudus;
+	TREE 'Edited, based on Edited, based on Edited, based on Default Symmetrical Tree+   [Stored Trees]+' = (1,(2,(3,((7,6),(5,4)))));
+
+END;
+
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1779297180828;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 4921348022309557115;
+			tell It;
+				setDefaultOrder  6 5 4 0 1 2 3;
+				attachments <null>;
+			endTell;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 4645139351818157011;
+			tell It;
+				setDefaultOrder  0 26 9 10 27 23 31 30 1 32 28 16 2 29 37 3 18 4 33 5 6 41 22 11 21 12 13 24 7 36 14 20 15 34 17 8 19 25 35 39;
+				attachments <null>;
+			endTell;
+			mqVersion 401;
+			checksumv 0 3 451782133 null  getNumChars 40 numChars 40 getNumTaxa 7 numTaxa 7   short true   bits 3   states 3   sumSquaresStatesOnly 464.0 sumSquares 464.0 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setUniqueID 01983e04d9798;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 1536 737;
+			setLocation -7 -7;
+			setFont SanSerif;
+			setFontSize 10;
+			getToolPalette;
+			tell It;
+			endTell;
+		endTell;
+		getEmployee  #mesquite.io.InterpretFastaDNA.InterpretFastaDNA;
+		tell It;
+			includeGaps false;
+			simplifyTaxonName false;
+			convertMultStateToMissing true;
+			writeExcludedCharacters true;
+			uniqueSuffix '';
+		endTell;
+		getEmployee  #mesquite.io.InterpretFastaDNAByOTUID.InterpretFastaDNAByOTUID;
+		tell It;
+			includeGaps false;
+			simplifyTaxonName false;
+			convertMultStateToMissing true;
+			writeExcludedCharacters true;
+			uniqueSuffix '';
+		endTell;
+		getEmployee  #mesquite.io.InterpretFastaProtein.InterpretFastaProtein;
+		tell It;
+			includeGaps false;
+			simplifyTaxonName false;
+			convertMultStateToMissing true;
+			writeExcludedCharacters true;
+			uniqueSuffix '';
+		endTell;
+		getEmployee  #mesquite.chromaseq.ExportFastaDNAForGenBankTbl2Asn.ExportFastaDNAForGenBankTbl2Asn;
+		tell It;
+			includeGaps false;
+			simplifyTaxonName false;
+			convertMultStateToMissing true;
+			writeExcludedCharacters true;
+			uniqueSuffix '';
+		endTell;
+		getEmployee  #mesquite.chromaseq.ExportFastaDNAForSequin.ExportFastaDNAForSequin;
+		tell It;
+			includeGaps false;
+			simplifyTaxonName false;
+			convertMultStateToMissing true;
+			writeExcludedCharacters true;
+			uniqueSuffix '';
+		endTell;
+		getEmployee  #mesquite.trees.BasicTreeWindowCoord.BasicTreeWindowCoord;
+		tell It;
+			makeTreeWindow #4921348022309557115  #mesquite.trees.BasicTreeWindowMaker.BasicTreeWindowMaker;
+			tell It;
+				suppressEPCResponse;
+				setTreeSourceEditMode #mesquite.trees.StoredTrees.StoredTrees;
+				tell It;
+					laxMode;
+					setTreeBlock -2147483647;
+					toggleUseWeights off;
+				endTell;
+				setAssignedID 1336.1753412085264.86871317305399421;
+				getTreeWindow;
+				tell It;
+					readUnsavedTreeBlock Temp1336.1753412085264.86871317305399421;
+					setUniqueID 01983f81261812;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1436 665;
+					setLocation -7 -7;
+					setFont SanSerif;
+					setFontSize 10;
+					getToolPalette;
+					tell It;
+						setTool mesquite.trees.BasicTreeWindowMaker.BasicTreeWindow.arrow;
+					endTell;
+					getTreeDrawCoordinator #mesquite.trees.BasicTreeDrawCoordinator.BasicTreeDrawCoordinator;
+				tell It;
+					suppress;
+					setTreeDrawer  #mesquite.trees.SquareLineTree.SquareLineTree;
+					tell It;
+						setNodeLocs #mesquite.trees.NodeLocsStandard.NodeLocsStandard;
+						tell It;
+							orientRight;
+							branchLengthsDisplay 1;
+							toggleScale on;
+							toggleBroadScale off;
+							toggleCenter on;
+							toggleEven on;
+							setFixedTaxonDistance 0;
+							setTaxonSqueeze 1.0;
+						endTell;
+						setEdgeWidth 4;
+						showEdgeLines on;
+					endTell;
+					setBackground White;
+					setBranchColor Black;
+					showNodeNumbers off;
+					showBranchColors on;
+					setSelectedTaxonHighlightMode 1;
+					desuppress;
+					getEmployee #mesquite.trees.BasicDrawTaxonNames.BasicDrawTaxonNames;
+					tell It;
+						setColor Black;
+						setTaxonNameStyler  #mesquite.trees.NoColorForTaxon.NoColorForTaxon;
+						toggleShadePartition off;
+						toggleShowFootnotes on;
+						toggleNodeLabels on;
+						toggleCenterNodeNames off;
+						toggleShowNames on;
+						namesAngle ?;
+					endTell;
+					getEmployee #mesquite.trees.CollapseCladeNameHighlight.CollapseCladeNameHighlight;
+					tell It;
+						setMode 5;
+					endTell;
+				endTell;
+					setTreeNumber 1;
+					pinToLastTree off;
+					setDrawingSizeMode 0;
+					toggleLegendFloat off;
+					scale 0;
+					toggleTextOnTree off;
+					getInfoPanel;
+					tell It;
+						btspOpen true;
+						apOpen true;
+					endTell;
+					toggleInfoPanel on;
+					togglePrintName off;
+					showWindow;
+					newAssistant  #mesquite.ancstates.TraceAllChanges.TraceAllChanges;
+				tell It;
+					toggleByCharacters on;
+					ambiguousChangesAlso on;
+					traceSingleCharacter off;
+					tickOnly off;
+					constantDistance off;
+					setSingleCharacter -1;
+					setBarLength 16;
+					toggleSelectedOnly on;
+					toggleSelectedCharsOnly off;
+					toggleShowTerminals off;
+					toggleShowTable off;
+					toggleShowCharNames on;
+					toggleShowStateNames on;
+					getCharSource #mesquite.charMatrices.CharMatrixCoordIndep.CharMatrixCoordIndep;
+					tell It;
+						setCharacterSource #mesquite.charMatrices.StoredMatrices.StoredMatrices;
+						tell It;
+							setDataSet #4645139351818157011;
+						endTell;
+					endTell;
+					getReconstructor #mesquite.ancstates.AncestralStatesAll.AncestralStatesAll;
+					tell It;
+						setMethod  #mesquite.parsimony.ParsAncestralStates.ParsAncestralStates;
+						tell It;
+							setModelSource  #mesquite.parsimony.CurrentParsModels.CurrentParsModels;
+							toggleMPRsMode on;
+						endTell;
+					endTell;
+					desuppress;
+					getEmployee #mesquite.ancstates.ShadeStatesOnTree.ShadeStatesOnTree;
+					tell It;
+						toggleLabels off;
+						togglePredictions off;
+						toggleGray off;
+					endTell;
+				endTell;
+				endTell;
+				setEditMode 'Edited, based on Edited, based on Edited, based on Default Symmetrical Tree+   [Stored Trees]+   [Stored Trees]';
+				desuppressEPCResponseNORESET;
+				getEmployee #mesquite.trees.TreeInfoValues.TreeInfoValues;
+				tell It;
+					panelOpen false;
+				endTell;
+				getEmployee #mesquite.genomic.ShowMatrixInTreeWindow.ShowMatrixInTreeWindow;
+				tell It;
+					chooseOrLink 0;
+					fieldWidth 0;
+					selectedOnly false;
+					showControlIcon true;
+					useTraceColors true;
+					showMatrix false;
+				endTell;
+				getEmployee #mesquite.trees.BranchPropertyDisplayControl.BranchPropertyDisplayControl;
+				tell It;
+					showAssociate Node_label 0 false;
+					setBooleans Node_label 0  false false false false true false false false;
+					setNumbers Node_label 0  12 0 0 4 0 ?;
+					showAssociate Branch_length 0 false;
+					setBooleans Branch_length 0  true false false true true false false false;
+					setNumbers Branch_length 0  12 0 0 4 0 ?;
+				endTell;
+				getEmployee #mesquite.trees.ColorBranches.ColorBranches;
+				tell It;
+					setColorRGB #ff0000;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.ornamental.BranchNotes.BranchNotes;
+				tell It;
+					setAlwaysOn off;
+				endTell;
+				getEmployee #mesquite.ornamental.NodeSpots.NodeSpots;
+				tell It;
+					showSpots on;
+					spotSize 8;
+					spotSizeSet false;
+					spotType 0;
+					spotColor #000000;
+					offset 0;
+				endTell;
+				getEmployee #mesquite.ornamental.ColorTreeByPartition.ColorTreeByPartition;
+				tell It;
+					colorByPartition off;
+				endTell;
+			endTell;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #4645139351818157011 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					setUniqueID 01983e05ab069;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1436 665;
+					setLocation -7 -7;
+					setFont SanSerif;
+					setFontSize 10;
+					getToolPalette;
+					tell It;
+						setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					endTell;
+					setActive;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.NoColor.NoColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					contrastCellText on;
+					toggleReduceCellBorders off;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleColorOnlyTaxonNames off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					toggleShowPaleExcluded off;
+					togglePaleInapplicable on;
+					togglePaleMissing off;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.AlterData.AlterData;
+				tell It;
+					toggleBySubmenus off;
+				endTell;
+				getEmployee #mesquite.charMatrices.DefaultCellColor.DefaultCellColor;
+				tell It;
+					getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+					tell It;
+						setStateLimit 9;
+						toggleUniformMaximum on;
+					endTell;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		getWindow;
+		tell It;
+			setResourcesState false false 100;
+			findWindow 01983e05ab069;
+			tell It;
+				setAsFront;
+			endTell;
+			desuppress;
+		endTell;
+		endTell;
+end;
+
+
