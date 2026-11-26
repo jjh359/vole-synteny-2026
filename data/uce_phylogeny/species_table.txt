@@ -1,0 +1,17 @@
+Microtus agrestis,micagr2
+Microtus arvalis,micarv1
+Microtus californicus,miccal1
+Microtus longicaudus V1,miclon1
+Microtus longicaudus V2,miclon2
+Microtus montanus,micmon1
+Microtus obscurus,micobs1
+Microtus ochrogaster,micoch1
+Microtus oregoni (f),micore1
+Microtus oregoni (m),micore2
+Microtus pennsylvanicus,micpen1
+Microtus richardsoni,micric2
+Alexandromys fortis,alefor1
+Alexandromys oeconomus,aleoec1
+Arvicola amphibius,arvamp1
+Chionomys nivalis,chiniv1
+Neodon fuscus,neofus1
